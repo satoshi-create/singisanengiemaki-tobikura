@@ -1,0 +1,245 @@
+
+/*全般*/
+
+body{
+    /*たてがき*/
+    /*    IE*/
+    writing-mode: tb-rl; 
+    /*Opera*/
+    -o-writing-mode: vertical-rl; 
+    /*Chrome, Safari*/
+    -webkit-writing-mode: vertical-rl; 
+    /*Firefox, Edge*/
+    writing-mode: vertical-rl;
+    /*縦書きの際に、すべてのテキストを正立に配置する*/
+    text-orientation: upright;
+
+    /*    <!-- おすすめの明朝体のCSS(font-family)設定 -->*/
+    font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
+    font-size: 16px;
+
+    margin:auto;
+    background: #fff;
+    color:#070707;
+}
+
+a {
+    text-decoration: none;
+    color:#070707;
+    cursor: pointer;
+}
+a:hover{
+    color:#818181;
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    height: 100%;
+}
+.text-combine {
+    text-combine-upright: all;
+}
+
+.sp{
+    display: block;
+}
+
+.pc{
+    display: none;
+}
+
+/*sidebar*/
+
+#slideR {
+    z-index: 99;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: -140px;
+    background: rgba(206, 206, 65, 0.46);
+    width: 180px;
+    height: 300px;
+}
+
+#slideR a {
+    display: block;
+    text-indent: 1em;
+    /*                padding: 0 10px 0 0;*/
+}
+
+#slideR a:hover{
+    color: red;
+    opacity: 1.2;
+}
+
+#slideR ul {
+    position: relative;
+    padding: 10px 0 10px 10px;
+    /*                padding-left: 40px;*/
+    list-style: none;
+}
+#slideR ul li{
+    font-weight: bold;
+}
+
+#slideR .nav-icon {
+    position: absolute;
+    right: 150px;
+    top: 5%;
+}
+
+#slideR .nav-icon h1{
+    font-size: 16px;
+}
+
+#slideR .nav-icon h3 {
+    font-size: 20px;
+    padding: 0 25px 0 0;
+    /*    color: #000;*/
+
+}
+
+/*スライダー下*/
+
+
+#slideB {
+    z-index: 100;
+    /*    cursor: pointer;*/
+    position: fixed;
+    right: 0;
+    bottom:-30%;
+    height: 30%;
+    /*    width: auto;*/
+    /*    padding: 10px 0 0 0;*/
+    /*    background: red;*/
+    /*    background: rgb(147, 145, 145);*/
+    /*    background-image: repeating-linear-gradient(135deg, rgba(167, 151, 86, 0.52) 33px, rgba(250, 248, 197, 0.51) 67px, rgba(167, 151, 86, 0.55) 100px);*/
+
+}
+
+#slideB .slide-innerB {
+    /*    height: 29%;*/
+    /*            width: 400px;*/
+    position: relative;
+    overflow: auto;
+    /*            overflow-y: auto;*/
+    background: rgb(219, 218, 218);
+
+}
+
+#slideB .slide-innerB section {
+    padding: 20px;
+    font-size:15px;
+}
+#slideB .slide-innerB section p{
+    font-weight: bold;
+
+}
+#slideB .slide-innerB section p a{
+    color: red;
+}
+
+#slideB .slide-innerB a:hover{
+    color: red;
+    opacity: 1.2;
+}
+
+.header_01{
+    z-index: 100;
+    width: 100%;
+    /*    background: #b4a07b url(../img/bg.jpg);*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    color: #000;
+    writing-mode:horizontal-tb;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    /*    background: #b4a07b url(../img/bg.jpg);*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    writing-mode:horizontal-tb;
+
+
+}
+
+.footer_copy{
+    color: #000;
+    text-align: center;
+    /*        padding-top: 0.5rem;*/
+    font-size: 12px;
+    font-size: 12px;
+}
+
+#nav {
+    list-style: none;
+    display: flex;
+    background: rgba(132, 121, 121, 0.06);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+#nav li {
+    text-indent: 1em;
+    cursor: pointer;
+    text-indent: 5em;
+
+}
+
+#nav li:first-child {
+    text-indent: 4em;
+
+}
+
+
+#nav li a {
+    color: #000;
+}
+
+#contents {
+    /*    transform: scale(1);*/
+
+
+    /*width: calc(5000px * 5);*/
+
+    /*margin: 0 0 0 210px;*/
+    /*height: 90%;*/
+    /*padding: 3% 3% 5%;*/
+    /*z-index: 10;*/
+    /*overflow: hidden;*/
+
+}
+
+.section01,
+.section02,
+.section03,
+.section04 {
+
+
+    overflow: hidden;
+    max-height: 100%;
+    /*    width: 50%;*/
+    /*    width: 1000px;*/
+
+}
+/*
+
+.line{
+border-left: 1px solid #070707;;
+
+
+}
+*/
+
